@@ -35,10 +35,32 @@ _5. 使用 Google Colab 運行基本的 Python 程式碼_
 
 >這個倒是不常用，使用這個功能類似jupyter notebook，而我們要跑的程式碼基本上是已經編輯好的工程項目。利用colab主要是想透過GPU加速更快的訓練。
 ![image](ai.png/1538832-20190714225610556-1791273060.png)
+
 _6. 在建立的資料夾頁面上傳你的整個要跑的檔案(包括資料集)，右鍵選取upload fold 或直接拖曳也行_
 
 # Colab模型訓練
 _1. 加載盤_
+```
+from google.colab import drive
+drive.mount('/content/drive/')
+```
+![image](ai.png/1538832-20190714230932384-1359631752.png)
 
-![image]()
-![image]()
+_2. 切換到你要跑的目錄下面_
+```
+# 指定目前的工作資料夾
+import os
+# 此處為google drive中的檔案路徑,drive為先前指定的工作根目錄，若要加上
+os.chdir("/content/drive/MyDrive/LapSRN/")
+```
+_3. 安裝Pytorch以及torchvision_
+
+>Colab 一般情況下已經自備了pytorch環境了。若沒有可以進行對應的安裝：
+```
+!pip install torch torchvision  # 在Colab中执行操作语句时，感叹号不能漏
+```
+_4. 執行訓練命令_
+![image](ai.png/1538832-20190714231518478-1065278260.png)
+
+_5. 注意事項_
+>最重要的是路徑問題，一般在data.py或dateset.py檔裡面有關於路徑的，還有save model時候。可以將路徑相關的都改成parse的語句，在執行指令時傳入防止出錯。相關的路徑可以直接複製
