@@ -14,4 +14,5 @@ _Colab是什麼？_
 _Colab的基本配置_
 >1. 登入 Google Drive
 >2. 在 Google Drive 上建立資料夾，我建立的是名字為 app 的資料夾
-![image]()
+![image](ai.png/1538832-20190714224844251-1534150405.png)
+>3. 
