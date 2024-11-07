@@ -15,4 +15,9 @@ _Colab的基本配置_
 >1. 登入 Google Drive
 >2. 在 Google Drive 上建立資料夾，我建立的是名字為 app 的資料夾
 ![image](ai.png/1538832-20190714224844251-1534150405.png)
->3. 
+>3. 建立新的 Colab 筆記（Notebook），透過 右鍵點擊 > More > Colaboratory 步驟建立一個新的筆記
+![image]()
+![image]()
+![image]()
+![image]()
+![image]()
